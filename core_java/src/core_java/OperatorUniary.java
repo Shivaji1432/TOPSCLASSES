@@ -1,0 +1,30 @@
+package core_java;
+
+public class OperatorUniary {
+	public static void main(String[] args) {
+//		int a = 10;
+//		int b = ++a + a++;
+//		System.out.println(a++); // 11
+//		System.out.println(a++);
+//		System.out.println(a);
+//		System.out.println(b); // 22
+//		System.out.println(b);
+//		System.out.println(a);
+//		System.out.println(a + b);// 10+22
+//		System.out.println(b);
+		int n=1;
+		System.out.println(n++);//n=1 print then value of n=2
+		System.out.println(++n);//n=3 print  then value of n=3
+		/*
+		 int m=++n + n++ + --n - n-- + n++;
+		 n=3: 4 + 4 + 4 - 4 + 3
+		System.out.println(n);//n=4
+		System.out.println(m);//m=11
+		*/
+		int a1=n-- + n++ + ++n + --n - ++n - n++;
+		//n=3: 3 + 2 + 4 + 3 - 4 - 4
+		System.out.println(n);//n=5
+		System.out.println(a1);//a1=4
+	}
+
+}
