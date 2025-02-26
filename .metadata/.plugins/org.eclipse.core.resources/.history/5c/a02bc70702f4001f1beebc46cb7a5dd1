@@ -1,0 +1,22 @@
+package core_java;
+
+public class AllOperator {
+		public static void main(String[] args) {
+			int a=10;
+			int b=15;
+			System.out.println(a==b); //relation operator 
+			System.out.println(a!=b); //relation operator
+			System.out.println(a>=b);//relation operator
+			System.out.println(a<=b);//relation operator
+			System.out.println("next");
+			System.out.println(a=b);//assignment operator
+			System.out.println(a+=b);//assignment operator
+			System.out.println(a-=b);//assignment operator
+			System.out.println(a*=b);//assignment operator
+			System.out.println("next");
+			System.out.println(a==b && a==b);
+			System.out.println(a!=b && b!=a);
+			System.out.println(a==b && a==b);
+			System.out.println(a==b && a==b);
+		}
+}

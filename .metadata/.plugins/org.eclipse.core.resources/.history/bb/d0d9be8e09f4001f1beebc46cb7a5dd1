@@ -1,0 +1,15 @@
+package assignment1;
+
+import java.util.*;
+
+public class Q1DataType {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int user=sc.nextInt();
+		int a,b;
+		System.out.println(user);
+
+	}
+
+}

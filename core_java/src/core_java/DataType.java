@@ -22,6 +22,5 @@ public class DataType {
         short s= (short)a;
         int b1=(int)l;
         System.out.println("int "+b1+" short "+s);
-	}
-
+}
 }
