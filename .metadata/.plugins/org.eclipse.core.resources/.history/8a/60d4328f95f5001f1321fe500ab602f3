@@ -1,0 +1,17 @@
+package core_java;
+
+import java.util.Scanner;
+
+public class Calc {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int choice = sc.nextInt();
+		if (choice==1) {
+			System.out.println(a + b);
+
+		}
+	}
+}
