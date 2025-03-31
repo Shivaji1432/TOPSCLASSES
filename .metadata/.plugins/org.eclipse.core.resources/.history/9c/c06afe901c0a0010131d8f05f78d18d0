@@ -1,0 +1,20 @@
+package core_java;
+class AgeInvalidException extends Exception {
+	
+}
+class Age{
+	int n;
+	public void getage() {
+	if(n<18)  {
+		
+	}else {
+		System.out.println(n+"you are valid");
+	}
+}
+}
+public class Exceptiondemo {
+public static void main(String[] args) {
+	Age a=new Age();
+	a.getage();
+}
+}

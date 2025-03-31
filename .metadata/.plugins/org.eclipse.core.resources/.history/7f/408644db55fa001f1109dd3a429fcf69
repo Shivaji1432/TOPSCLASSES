@@ -1,0 +1,21 @@
+package core_java;
+
+public class Buterfly {
+public static void main(String[] args) {
+	int n=10;
+	//int sp=n-1;
+	int st=n;
+	for(int i=1;i<=n;i++) {
+		for(int j=n;j>=1;j--) {
+			System.out.print(" ");
+		}for(int j=st;j>=1;j--) {
+			System.out.print("*");
+		}
+		System.out.println("");
+		st++;
+		sp++;
+		
+	}
+	
+}
+}

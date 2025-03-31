@@ -1,0 +1,11 @@
+package core_java;
+
+public class ReverseString {
+public static void main(String[] args) {
+	String s="this is human rights";
+	char ch[]=s.toCharArray();
+	for (int i= ch.length;i>=0; i--) {
+		System.out.print(ch);
+	}
+}
+}

@@ -1,0 +1,14 @@
+package core_java;
+
+public class Wrappercl {
+public static void main(String[] args) {
+	int a=10;
+	Integer a1=new Integer(a);//boxing
+	Integer a2=a;//autoBoxing
+	Integer b=10;
+	int b1=b.intValue();//unBoxing
+	int b2=b;//autuBoxing
+	
+	
+}
+}

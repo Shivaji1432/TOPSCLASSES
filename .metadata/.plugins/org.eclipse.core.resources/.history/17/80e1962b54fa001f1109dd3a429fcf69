@@ -1,0 +1,53 @@
+package core_java;
+
+public class PyarmidVar {
+
+	public static void main(String[] args) {
+		int n = 5;
+		int sp = n - 1;
+		int st = 1;
+		int mid = (n / 2) + 1;
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= sp; j++) {
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= st; j++) {
+				if(i==1||j==1||i==st||j==st) {
+				System.out.print("*");
+			}else {
+				System.out.print(" ");
+			}
+		}
+			if (i < mid) {
+				sp--;
+				st += 2;
+			} else {
+				sp++;
+				st -= 2;
+			}
+			System.out.println("");
+
+	}
+		
+//		int n = 5;
+//		
+//		int stars = 1;
+//		
+//		int spaces = n - 1;
+//		
+//		for(int i=1; i<=n; i++) {
+//			for(int j=1; j<=spaces; j++) {
+//				System.out.print(" ");
+//			}
+//			
+//			for(int j=1; j<=stars; j++) {
+//				System.out.print("*");
+//			}
+//			
+//			spaces--;
+//			stars+=2;
+//			
+//			System.out.println();
+//		}
+}
+}

@@ -1,0 +1,9 @@
+package core_java;
+
+public class Stringreverse {
+public static void main(String[] args) {
+	StringBuilder sb="the java is based on oops";
+	sb.reverse();
+	System.out.println(sb);
+}
+}

@@ -9,7 +9,7 @@ public static void main(String[] args) {
 	short s=(short)a1;  //int=4byte into shor=2byte
 	System.out.println("this is explict"+s);
 	int b1=1275;          
-	byte b=(byte)b1;  //int=4byte into byte=1byte
+	byte b=(byte)b1;  //int=4byte into byte=1byten
 	System.out.println("this is explict"+b);
 
 }

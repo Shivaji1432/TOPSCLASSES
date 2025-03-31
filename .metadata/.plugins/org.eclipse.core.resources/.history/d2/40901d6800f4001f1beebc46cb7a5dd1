@@ -1,7 +1,0 @@
-package core_java;
-
-public class Comparison {
-		public static void main(String[] args) {
-			
-		}
-}

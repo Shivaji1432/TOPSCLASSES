@@ -1,0 +1,19 @@
+package core_java;
+
+public class StringChar {
+public static void main(String[] args) {
+	String s="shivshankae";
+	char ch[]=s.toCharArray();
+	for (int i = 0; i < ch.length; i++) {
+		if(ch[i]=='s') {
+			char ch1='r';
+			System.out.print(ch1);
+		}else if(ch[i]=='h'){
+			char ch2='o';
+			System.out.print(ch2);
+		}else {
+			System.out.print(ch[i]);
+		}
+	}
+}
+}

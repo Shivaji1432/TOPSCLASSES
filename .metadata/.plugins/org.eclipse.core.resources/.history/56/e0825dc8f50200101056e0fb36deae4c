@@ -1,0 +1,23 @@
+package core_java;
+interface Ac{
+	int a=10;
+	void display();
+}
+interface Ac1 extends Ac{
+	int a=100;
+	void display();
+}
+class Sc1 implements Ac1{
+
+	@Override
+	public void display() {
+		System.out.println(a+"displaying ....ac...");	
+	    System.out.println(a+"displaying ....ac...");	
+	}
+}
+public class Interface01 {
+public static void main(String[] args) {
+	Sc1 sc=new Sc1();
+	sc.display();
+}
+}

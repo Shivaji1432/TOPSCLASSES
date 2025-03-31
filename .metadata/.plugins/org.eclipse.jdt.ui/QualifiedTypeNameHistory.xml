@@ -1,2 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="core_java.Static"/>
+    <fullyQualifiedTypeName name="core_java.Student"/>
+    <fullyQualifiedTypeName name="core_java.Calc"/>
+    <fullyQualifiedTypeName name="core_java.Calculate"/>
+    <fullyQualifiedTypeName name="core_java.Herbivore"/>
+    <fullyQualifiedTypeName name="core_java.Animal"/>
+    <fullyQualifiedTypeName name="assignment1.Student"/>
+    <fullyQualifiedTypeName name="assignment1.Method"/>
+    <fullyQualifiedTypeName name="assignment1.Shiv"/>
+    <fullyQualifiedTypeName name="assignment1.Lion"/>
+    <fullyQualifiedTypeName name="assignment1.Account"/>
+    <fullyQualifiedTypeName name="assignment1.Current"/>
+    <fullyQualifiedTypeName name="assignment1.SavingAc"/>
+    <fullyQualifiedTypeName name="assignment1.Bird"/>
+    <fullyQualifiedTypeName name="assignment1.Crow"/>
+    <fullyQualifiedTypeName name="core_java.Stringtype"/>
+    <fullyQualifiedTypeName name="assignment1.Tiger"/>
+    <fullyQualifiedTypeName name="assignment1.Construct"/>
+    <fullyQualifiedTypeName name="assignment1.Counstruct"/>
+    <fullyQualifiedTypeName name="assignment1.Inherit"/>
+    <fullyQualifiedTypeName name="assignment1.Demoinherit"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="assignment1.Run"/>
+    <fullyQualifiedTypeName name="assignment1.Time"/>
+    <fullyQualifiedTypeName name="assignment1.Dog"/>
+    <fullyQualifiedTypeName name="assignment1.Cat"/>
+    <fullyQualifiedTypeName name="assignment1.Animal1"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="int"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Float"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="core_java.Age"/>
+    <fullyQualifiedTypeName name="core_java.AgeInvalidException"/>
+    <fullyQualifiedTypeName name="core_java.StringException"/>
+    <fullyQualifiedTypeName name="core_java.StringInvalidException"/>
+    <fullyQualifiedTypeName name="core_java.Stringdemio"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="core_java.FileClassMet"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+</qualifiedTypeNameHistroy>
