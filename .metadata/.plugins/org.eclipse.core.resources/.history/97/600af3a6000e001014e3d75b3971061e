@@ -1,0 +1,20 @@
+package assignment1;
+class Democlasses{
+	public Democlasses() {
+		System.out.println("hello ");
+	}
+	public Democlasses(String a) {
+		super();
+		System.out.println(a+"world");
+	}
+}
+public class Q23SuperDemo {
+
+	public static void main(String[] args) {
+		Democlasses d=new Democlasses();
+		Democlasses d1=new Democlasses("java");
+		
+
+	}
+
+}

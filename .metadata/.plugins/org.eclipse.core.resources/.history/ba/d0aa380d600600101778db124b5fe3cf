@@ -1,8 +1,0 @@
-package core_java;
-
-public class StringLnAdd {
-public static void main(String[] args) {
-	String s="this is very popular thing.\n yes it is popular.";
-	System.out.println(s);
-}
-}
