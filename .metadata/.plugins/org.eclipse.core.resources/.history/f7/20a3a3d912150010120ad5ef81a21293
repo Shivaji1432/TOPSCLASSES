@@ -1,0 +1,25 @@
+package assignment1;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class Q35Hashset {
+public static void main(String[] args) {
+	HashSet<Integer> i=new HashSet<Integer>();
+	i.add(15);
+	i.add(225);
+	i.add(155);
+	i.add(215);
+	i.add(15);
+	System.out.println(i);
+	System.out.println(i.size());
+	System.out.println("*******************************");
+	ArrayList<Integer> a=new ArrayList<Integer>();
+	a.add(10);
+	a.add(20);
+	a.add(30);
+	a.add(20);
+	a.add(10);
+	System.out.println(a);
+}
+}

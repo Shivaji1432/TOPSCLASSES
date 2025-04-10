@@ -3,7 +3,7 @@ class AgeInvalidException extends Exception {
 	
 }
 class Age{
-	int n=1;
+	int n=19;
 	public void getage() throws AgeInvalidException{
 	if(n<18){
 		throw new AgeInvalidException();

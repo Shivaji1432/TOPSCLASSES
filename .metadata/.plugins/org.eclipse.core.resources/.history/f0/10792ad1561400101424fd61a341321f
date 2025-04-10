@@ -1,0 +1,27 @@
+package core_java;
+class Ac1 extends Thread{
+	double balance;
+
+	public Ac1(double balance) {
+		super();
+		this.balance = balance;
+	}
+}
+class Cust extends Thread{
+	String name;
+	Ac1 account;
+	public Cust(String name, Ac1 account) {
+		super();
+		this.name = name;
+		this.account = account;
+	}
+	
+}
+public class ThreadAccount {
+public static void main(String[] args) {
+	Ac1 account=new Ac1(10000);
+	Cust c=new Cust("shiv",account);
+	Cust c1=new Cust("sitesh",account);
+	
+}
+}

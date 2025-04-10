@@ -1,0 +1,17 @@
+package assignment1;
+
+import java.util.HashSet;
+
+public class Q35Hashset {
+public static void main(String[] args) {
+	HashSet<Integer> i=new HashSet<Integer>();
+	i.add(15);
+	i.add(225);
+	i.add(155);
+	i.add(215);
+//	i.size();
+	for (Integer integer : i) {
+		System.out.println(i);
+	}
+}
+}

@@ -2,7 +2,7 @@ package core_java;
 
 import java.util.Scanner;
 
-public class Countstring {
+public class Countstring extends Animals {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String s = "hello java hello python";

@@ -7,19 +7,19 @@ class Animals
 }
 class Omnivore extends Animals
 {
-	public void display1() {
+	protected void display1() {
 		System.out.println("they eat both grass and flesh...");
 	}
 }
 class Carnivore extends Animals
 {
-  public void display2() {
+  protected void display2() {
 	  System.out.println("they can eat flesh...");
   }
 }
 class Herbivore extends Animals
 {
-	public void display3() {
+	protected void display3() {
 		System.out.println("they can eat flesh...");
 	}
 }

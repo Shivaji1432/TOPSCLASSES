@@ -1,0 +1,19 @@
+package assignment1;
+
+import java.util.ArrayList;
+
+public class Q34ArrayLinklist {
+public static void main(String[] args) {
+	ArrayList<String> a=new ArrayList<String>();
+	a.add("shiv");
+	a.add("shankar");
+	a.add("manish");
+	a.add("kanha");
+	a.remove(2);
+	a.addFirst("ram");
+	
+	for (String string : a) {
+		System.out.println(string);
+	}
+}
+}

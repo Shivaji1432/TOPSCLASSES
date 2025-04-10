@@ -1,0 +1,33 @@
+package assignment1;
+import core_java.*;
+import assignment1.*;
+class Priv{
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}
+public class Q28Acessdemo {
+public static void main(String[] args) {
+	AssignUsing a=new AssignUsing();
+	
+//	a.setName("shiv");//private method can not access by outside package. 
+//	System.out.println(a.getName());//or it cannot access in inside pakage also.
+	
+	a.show();//public can acess by inside package and outside package.
+	
+	Priv p=new Priv();//it can only acess by own class
+	p.setName("hello");
+	System.out.println(p.getName());
+	
+	Shivaji s=new Shivaji();
+	s.display();
+
+}
+}

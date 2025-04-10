@@ -1,0 +1,17 @@
+package assignment1;
+
+import java.util.Arrays;
+
+public class Q29Exception {
+public static void main(String[] args) {
+	int  mark[]= {10,20,30};
+	for (int i = 0; i < mark.length; i++) {
+		System.out.println(mark[i]);
+	}try{
+		System.out.println(mark[4]);
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
+	System.out.println("thanks");
+}
+}

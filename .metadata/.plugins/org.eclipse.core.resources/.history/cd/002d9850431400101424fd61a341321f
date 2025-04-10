@@ -1,0 +1,54 @@
+package assignment1;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Students implements Serializable{
+	String name;
+	int id;
+	String email;
+	public Students(int id,String name,String email) {
+		this.id=id;
+		this.name=name;
+		this.email=email;
+	}
+	@Override
+	public String toString() {
+		return "Students [name=" + name + ", id=" + id + ", email=" + email + "]";
+	}
+  
+}
+public class Q33SerialDserial {
+public static void main(String[] args) {
+	Students st=new Students(1, "shiv", "shiv@gmail.com");
+	Students st1=new Students(2, "renuka", "renuka@gmail.com");
+	Students st2=new Students(3, "arushi", "arushi@gmail.com");
+//	try {
+//		FileOutputStream fos=new FileOutputStream("C://Users//shivs//Documents//home.txt");
+//		ObjectOutputStream os=new ObjectOutputStream(fos);
+//		os.writeObject(st);
+//		System.out.println("file added");
+//		os.close();
+//	} catch (IOException e) {
+//		e.printStackTrace();
+//	}
+	try {
+		FileInputStream fis=new FileInputStream("C://Users//shivs//Documents//home.txt");
+		ObjectInputStream ors=new ObjectInputStream(fis);
+		Students st3=(Students) ors.readObject();
+		System.out.println(st3);
+		ors.close();
+		
+	} catch (IOException | ClassNotFoundException e) {
+		e.printStackTrace();
+	}
+	
+}
+}
