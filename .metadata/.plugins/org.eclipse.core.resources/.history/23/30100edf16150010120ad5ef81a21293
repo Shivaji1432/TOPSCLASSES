@@ -1,7 +1,0 @@
-package assignment1;
-
-public class Q37ReadConsole {
-public static void main(String[] args) {
-	
-}
-}

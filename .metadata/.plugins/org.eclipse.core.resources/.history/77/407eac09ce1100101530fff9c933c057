@@ -1,7 +1,0 @@
-package assignment1;
-
-public class Q30ExceptionDiffer {
-public static void main(String[] args) {
-	
-}
-}

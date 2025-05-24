@@ -1,7 +1,5 @@
 package core_java;
 
-import java.util.Arrays;
-
 public class Array2d {
 public static void main(String[] args) {
 	int [][]a= {{10,20,30},{11,22,33},{12,23,34}};
