@@ -6,46 +6,61 @@ class Acc1 {
 	double balance;
 
 	public Acc1(double balance) {
-		super();
 		this.balance = balance;
 	}
+
 	public boolean amtExist(double amt) {
-		boolean b=false;
-		if(balance>=amt) {
-			b=true;
+		return balance >= amt;
 	}
-		return b;
-	}
-	public void withdraw(double amt) {
-		balance-=amt;
-	}
-}
-class Cust extends Thread{
-	String name;
-	Acc1 account=new Acc1(10000);
-	
-	public Cust(String name, Acc1 account) {
-		super();
-		this.name = name;
-		this.account = account;
-	}
-	void display() {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("enter amount to withdraw :"+name);
-		double amt=sc.nextDouble();
-		if(account.amtExist(amt)) {
-			account.withdraw(amt);
-		}else {
-			System.out.println();
+
+	public synchronized void withdraw(double amt, String name) {
+		if (amtExist(amt)) {
+			System.out.println(name + " is withdrawing ₹" + amt);
+			balance -= amt;
+			System.out.println(name + " successfully withdrew. Remaining balance: ₹" + balance);
+		} else {
+			System.out.println(name + " tried to withdraw ₹" + amt + " but insufficient balance!");
 		}
 	}
-	
 }
+
+class Cust implements Runnable {
+	String name;
+	Acc1 account;
+	double amount;
+
+	public Cust(String name, Acc1 account, double amount) {
+		this.name = name;
+		this.account = account;
+		this.amount = amount;
+	}
+
+	@Override
+	public void run() {
+		account.withdraw(amount, name);
+	}
+
+}
+
 public class ThreadAccount {
-public static void main(String[] args) {
-	Acc1 account=new Acc1(10000);
-	Cust c=new Cust("shiv",account);
-	Cust c1=new Cust("sitesh",account);
-	
-}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		Acc1 account = new Acc1(10000);
+
+		System.out.print("Shiv, enter amount to withdraw: ");
+		double amt1 = sc.nextDouble();
+
+		System.out.print("Sitesh, enter amount to withdraw: ");
+		double amt2 = sc.nextDouble();
+
+		Cust c1 = new Cust("Shiv", account, amt1);
+		Cust c2 = new Cust("Sitesh", account, amt2);
+
+		Thread t1 = new Thread(c1);
+		Thread t2 = new Thread(c2);
+		t1.start();
+		t2.start();
+
+	}
 }

@@ -3,7 +3,7 @@ package core_java;
 public class Armstrong {
 public static void main(String[] args) {
 	for(int i=100;i<=999;i++) {
-	int num=153;
+	int num=i;
 	int temp=num;
 	int sum=0;
 	while(num!=0) {
@@ -14,7 +14,7 @@ public static void main(String[] args) {
 	if(temp==sum) {
 		System.out.println(temp+"arm");
 	}else {
-	System.out.println(temp+"not arm");
+	//System.out.println(temp+"not arm");
 	}
 	}
 }

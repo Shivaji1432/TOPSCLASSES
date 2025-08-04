@@ -1,0 +1,107 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 50px;
+	background-color: #f2f2f2;
+}
+
+fieldset {
+	border: 2px solid #4CAF50;
+	border-radius: 8px;
+	padding: 20px;
+	max-width: 400px;
+	background-color: #fff;
+}
+
+legend {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #4CAF50;
+	padding: 0 10px;
+}
+
+label {
+	display: block;
+	margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+	margin-top: 15px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.Login-link {
+	display: inline-block;
+	margin-top: 10px;
+	background-color: #008CBA;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.Login-link:hover {
+	background-color: #007bb5;
+}
+</style>
+</head>
+</head>
+<body>
+
+	<form action="reg" method="post">
+		<fieldset style="margin: auto;">
+			<legend>Registration Form</legend>
+			<div>
+			<span style="color: green">${msg}</span>
+			<span style="color: red">${err}</span>
+				<label for="name">Username:</label> 
+				<input type="text" name="name" id="name"
+				value="<%if(request.getParameter("name")!=null){out.print(request.getParameter("name"));};%>">
+				<span id="unameerr" style="color: red;">${unameerr}</span><br> 
+				
+					<label for="email">Email:</label>
+				<input type="email" name="email" id="email"
+                value="<%if(request.getParameter("email")!=null){out.print(request.getParameter("email"));};%>">
+				<span id="emailerr" style="color: red;">${emailerr}</span><br>  
+				
+				<label for="pass">Password:</label>
+					 <input type="password" name="pass" id="pass"
+					 value="<%if(request.getParameter("pass")!=null){out.print(request.getParameter("pass"));};%>">
+				<span id="passerr" style="color: red;">${passerr}</span><br>
+				 
+					<label for="cpass">Confirm Password:</label> 
+				<input type="password" name="cpass" id="cPass"
+				 value="<%if(request.getParameter("cpass")!=null){out.print(request.getParameter("cpass"));};%>">
+                 <span id="cpasserr" style="color: red;">${cpasserr}</span><br> 
+
+				<input type="submit" value="Register"> 
+				<a href="login.jsp"	class="Login-link">Login Here</a>
+				<a href="display"	class="Login-link">View Users</a>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
