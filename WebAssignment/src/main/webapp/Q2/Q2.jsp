@@ -13,17 +13,18 @@
     <!-- Internal CSS -->
     <style>
         .internal-style {
-            color: white;
-            background-color: blue;
+            color: black;
+            background-color: red;
             padding: 10px;
             text-align: center;
+            font-size: 50px;
         }
     </style>
 </head>
 <body>
 
     <!-- Inline CSS -->
-    <h1 style="color: red; text-align: center;">This is an Inline Styled Heading</h1>
+    <h1 style="color: green; text-align: center;">This is an Inline Styled Heading</h1>
 
     <!-- Internal CSS -->
     <p class="internal-style">This paragraph is styled using Internal CSS.</p>

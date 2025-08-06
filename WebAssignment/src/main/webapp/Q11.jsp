@@ -1,17 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Servlet Demo</title>
 </head>
 <body>
 
-<a href="src">Click Here for Http Servlet</a>
+<a href="httpservlet">Click Here for Http Servlet</a>
 <br><br>
-
-<a href="gen">Click Here for Genric Servlet</a>
+<a href="gen">Click Here for Generic Servlet</a>
 
 </body>
 </html>

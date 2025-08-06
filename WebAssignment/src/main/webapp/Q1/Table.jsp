@@ -26,31 +26,31 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Roshan Gupta</td>
-                        <td>roshan@example.com</td>
-                        <td>9876543210</td>
+                        <td>ShivShankar</td>
+                        <td>shiv@example.com</td>
+                        <td>9825361532</td>
                         <td>Surat</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Amit Sharma</td>
+                        <td>Ashish Sharma</td>
                         <td>amit@example.com</td>
-                        <td>9123456789</td>
-                        <td>Mumbai</td>
+                        <td>9534455289</td>
+                        <td>Bombay</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Pooja Verma</td>
+                        <td>Sitesh malptra</td>
                         <td>pooja@example.com</td>
-                        <td>9988776655</td>
-                        <td>Delhi</td>
+                        <td>9846276655</td>
+                        <td>Pune</td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Rahul Singh</td>
-                        <td>rahul@example.com</td>
-                        <td>9900112233</td>
-                        <td>Bangalore</td>
+                        <td>Shiva Singh</td>
+                        <td>Shiva@example.com</td>
+                        <td>9782152233</td>
+                        <td>Bhuj</td>
                     </tr>
                 </tbody>
             </table>
